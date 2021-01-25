@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Formulario de Contacto</title>
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+	
+
+	<form>
+		<h2>Formulario de Contacto</h2>
+		<p><label for="nombre">Nombre <input id="nombre" autocomplete="off" type="text" required></label></p>
+		<p><label for="apellido">Apellido <input id="apellido" autocomplete="off" type="text" required></label></p>
+		<p><label for="email">Email <input id="email" autocomplete="off" type="email" required></label></p>
+		<p><label for="mensaje">Mensaje</label></p>
+		<textarea name="mensaje" id="mensaje" autocomplete="off" cols="30" rows="10" required></textarea>
+		<p><input type="submit" value="Enviar"> <a href="index.html" id="cancelar">Cancelar</a></p>
+
+	</form>
+
+	<script src="js/validacion.js"></script>
+	
+</body>
+</html>

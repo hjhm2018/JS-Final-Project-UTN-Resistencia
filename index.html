@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Evaluación Final Integradora</title>
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+	<header>
+		<h1>Evaluación Final Integradora</h1>
+		<h2>Programación Web con Javascript</h2>
+		<h3>Realizado por: Henry Herrera</h3>
+	</header>
+
+	<nav>
+		<button id="navHome">Home</button>
+		<button id="navConversiones">Conversiones</button>
+		<button id="navCuestionario">Cuestionario</button>
+		<button id="navPorosidad">Porosidad</button>
+		<a href="formulario.html">Contacto</a>
+	</nav>
+
+	<div id="paginaPrincipal">
+		<div id="descripcion">
+			<p>Esta evaluación final integradora constará de 4 secciones diferentes:</p>
+			<ol>
+				<li>Una tabla de conversiones</li> 
+				<li>Un cuestionario acerca de la Biblia</li>
+				<li>Una calculadora de porosidad para rocas sedimentarias a través de registros sónicos</li>
+				<li>Un formulario de contacto</li>
+			</ol>
+
+			<p>Esta es una imagen de la tabla de conversiones: </p>
+
+			<img src="img/tabla.JPG" alt="Tabla de conversiones">
+
+			<p>Esta es una imagen del cuestionario: </p>
+
+			<img src="img/cuestionario.JPG" alt="Cuestionario">
+
+			<p>Esta es una imagen de la calculadora de porosidad: </p>
+
+			<img src="img/porosidad.JPG" alt="Calculadora de porosidad">
+
+			<p>Esta es una imagen del formulario de contacto: </p>
+
+			<img src="img/formulario.JPG" alt="Formulario de Contacto">
+		
+		</div>
+
+	<!-- Tabla de conversiones -->
+	
+	<div id="conversionesTabla">
+
+		<p>Estas son las conversiones mas comunes usadas en la industria petrolera.</p>
+		<p>La tabla de conversiones cuenta con unidades de distancia o profundidades, de área, y de volumen.</p>
+
+	<table>
+		<tr><th colspan="3">Conversiones mas comunes en la industria petrolera</th></tr>
+		<tr><th colspan="2">Para convertir</th><th rowspan="2">Multiplica por</th></tr>
+		<tr><th>De</th><th>A</th></tr>
+		<tr><th id="distancia" colspan="3">Distancias - Profundidades</th></tr>
+		<tr><td>Metros</td><td>Pies</td><td>3.281</td></tr>
+		<tr><td>Millas</td><td>Pies</td><td>5.280</td></tr>
+		<tr><td>Kilómetros</td><td>Millas</td><td>0.621</td></tr>
+
+		<tr><th id="area" colspan="3">Áreas</th></tr>
+		<tr><td>Acres</td><td>Pies&#178;</td><td>43.560</td></tr>
+		<tr><td>Acres</td><td>Metros&#178;</td><td>4.047</td></tr>
+		<tr><td>Millas&#178;</td><td>Kilómetros&#178;</td><td>2.590</td></tr>
+		<tr><td>Kilómetros&#178;</td><td>Acres</td><td>247.1</td></tr>
+
+		<tr><th id="volumen" colspan="3">Volúmenes</th></tr>
+		<tr><td>Acres-Pies</td><td>Barriles</td><td>7,758.4</td></tr>
+		<tr><td>Barriles</td><td>Pies&#179;</td><td>5.615</td></tr>
+		<tr><td>Metros&#179;</td><td>Barriles</td><td>6.291</td></tr>
+		<tr><td>Barriles</td><td>Galones</td><td>42</td></tr>
+		<tr><td>Toneladas Métricas</td><td>Barriles</td><td>7.3</td></tr>
+		<tr><td>Metros&#179;</td><td>Pies&#179;</td><td>35.320</td></tr>
+
+		<tr><th id="presion" colspan="3">Presiones</th></tr>
+		<tr><td>PSIA</td><td>KPA</td><td>6.895</td></tr>
+		<tr><td>BAR</td><td>PSIA</td><td>14.504</td></tr>
+		<tr><td>BTU</td><td>JOULE</td><td>1,054.6</td></tr>
+	</table>
+
+	<p>Simplemente expande las pestañas que quieras usar e insertar números, los cuales serán convertidos de manera automática en la unidad correspondiente.</p>
+
+	<form id="conversiones">
+		<p id="distanciaP" class="tituloTabla"><strong>Distancias - Profundidades</strong><span class="spanOculto"> (click para expandir/ocultar)</span></p>
+		<div id="distanciaContainer">
+		<p>Metros <input id="metros" type="number"> Pies <input id="pies" type="number" disabled pattern="\d+(\.\d{2})?"></p>
+		<p>Millas <input id="millas" type="number"> Pies <input id="pies2" type="number" disabled></p>
+		<p>Kilómetros <input id="km" type="number"> Millas <input id="millas2" type="number" disabled></p>
+		</div>
+
+		<p id="areaP" class="tituloTabla"><strong>Áreas</strong><span class="spanOculto"> (click para expandir/ocultar)</span></p>
+		<div id="areaContainer">
+		<p>Acres <input id="acres" type="number"> Pies&#178; <input id="piesC" type="number" disabled></p>
+		<p>Acres <input id="acres2" type="number"> Metros&#178; <input id="metrosC" type="number" disabled></p>
+		<p>Millas&#178; <input id="millasC" type="number"> Kilómetros&#178; <input id="kmC" type="number" disabled></p>
+		<p>Kilómetros&#178; <input id="kmC2" type="number"> Acres <input id="acres3" type="number" disabled></p>
+		</div>
+
+		<p id="volumenP" class="tituloTabla"><strong>Volúmenes</strong><span class="spanOculto"> (click para expandir/ocultar)</span></p>
+		<div id="volumenContainer">
+		<p>Acres-Pies <input id="ap" type="number"> Barriles <input id="bbl" type="number" disabled></p>
+		<p>Barriles <input id="bbl2" type="number"> Pies&#179; <input id="pc" type="number" disabled></p>
+		<p>Metros&#179; <input id="mc" type="number"> Barriles <input id="bbl3" type="number" disabled></p>
+		<p>Barriles <input id="bbl4" type="number"> Galones <input id="galones" type="number" disabled></p>
+		<p>Toneladas Métricas <input id="tm" type="number"> Barriles <input id="bbl5" type="number" disabled></p>
+		<p>Metros&#179; <input id="mc2" type="number"> Pies&#179; <input id="pc2" type="number" disabled></p>
+		</div>
+
+		<p id="presionesP" class="tituloTabla"><strong>Presiones</strong> <span class="spanOculto"> (click para expandir/ocultar)</span></p>
+		<div id="presionesContainer">
+		<p>PSIA <input id="psia" type="number"> KPA <input id="kpa" type="number" disabled></p>
+		<p>BAR <input id="bar" type="number"> PSIA <input id="psia2" type="number" disabled></p>
+		<p>BTU <input id="btu" type="number"> JOULE <input id="joule" type="number" disabled></p>
+		</div>
+	</form>
+	</div>
+
+	<!-- Cuestionario -->
+
+	<div id="cuestionario">
+
+		<p>Esto es un cuestionario acerca de la Biblia.</p>
+
+	<h1 id="encabezado" class="cuestionario">¿Cuanto sabes de la Biblia?</h1>
+
+	<button id="jugar">Jugar</button>
+
+	<div id="resultado">
+
+		<progress id="progressBar" value="30" max="100"></progress>
+
+		<p id="textoResultado"></p>
+		
+	</div>
+
+	<div id="contenedor1" class="contenedor">
+
+	<form id="preguntaUno">
+		<p>¿En qué parte de Biblia aparece el siguiente pasaje: "Jesús le dijo: Yo soy el camino, y la verdad, y la vida; nadie viene al Padre, sino por mí"?</p>
+		<p><label for="Q1O1"><input id="Q1O1" type="radio" name="preguntaUno" value="juan14_6"> Juan 14:6 </label></p>
+		<p><label for="Q1O2"><input id="Q1O2" type="radio" name="preguntaUno" value="juan1_6"> Juan 1:6 </label></p>
+		<p><label for="Q1O3"><input id="Q1O3" type="radio" name="preguntaUno" value="juan4_2"> 2 Juan 4:2 </label></p>
+		<p><label for="Q1O4"><input id="Q1O4" type="radio" name="preguntaUno" value="juan3_16"> Juan 3:16 </label></p>
+	</form>
+
+	<button id="siguiente1">Siguiente</button>
+
+	</div>
+
+	<div id="contenedor2" class="contenedor">
+
+	<form id="preguntaDos">
+		<p>¿Qué dice la Biblia acerca del ÚNICO mediador entre Dios y los hombres en 1 Timoteo 2:5? </p>
+		<p><label for="Q2O1"><input id="Q2O1" type="radio" name="preguntaDos" value="P2_1"> María es la única intercesora. </label></p>
+		<p><label for="Q2O2"><input id="Q2O2" type="radio" name="preguntaDos" value="P2_2"> Jesús es el único mediador. </label></p>
+		<p><label for="Q2O3"><input id="Q2O3" type="radio" name="preguntaDos" value="P2_3"> Cualquier persona puede interceder a Dios. </label></p>
+		<p><label for="Q2O4"><input id="Q2O4" type="radio" name="preguntaDos" value="P2_4"> El árcangel Miguel es el único mediador. </label></p>
+	</form>
+
+	<button id="anterior1">Anterior</button>
+	
+	<button id="siguiente2">Siguiente</button>
+
+
+	</div>
+
+	<div id="contenedor3" class="contenedor">
+
+	<form id="preguntaTres">
+		<p>¿Cúal de los apóstoles le dijo a Jesús la siguiente frase: "Señor, ¿a quién iremos? Tú tienes palabras de vida eterna"?</p>
+		<p><label for="Q3O1"><input id="Q3O1" type="radio" name="preguntaTres" value="P3_1"> Pablo</label></p>
+		<p><label for="Q3O2"><input id="Q3O2" type="radio" name="preguntaTres" value="P3_2"> Juan </label></p>
+		<p><label for="Q3O3"><input id="Q3O3" type="radio" name="preguntaTres" value="P3_3"> Tómas </label></p>
+		<p><label for="Q3O4"><input id="Q3O4" type="radio" name="preguntaTres" value="P3_4"> Pedro </label></p>
+	</form>
+
+	<button id="anterior2">Anterior</button>
+	
+	<button id="siguiente3">Siguiente</button>
+
+	</div>
+
+	<div id="contenedor4" class="contenedor">
+
+	<form id="preguntaCuatro">
+		<p>¿Qué dice la Biblia acerca de que debemos hacer para ser salvos? </p>
+		<p><label for="Q4O1"><input id="Q4O1" type="radio" name="preguntaCuatro" value="P4_1"> Haz obras de caridad y tienes el cielo ganado. </label></p>
+		<p><label for="Q4O2"><input id="Q4O2" type="radio" name="preguntaCuatro" value="P4_2"> Cumple los diez mandamientos y el cielo es tuyo. </label></p>
+		<p><label for="Q4O3"><input id="Q4O3" type="radio" name="preguntaCuatro" value="P4_3"> Cree en el Señor Jesucristo, y serás salvo, tú y tu casa. </label></p>
+		<p><label for="Q4O4"><input id="Q4O4" type="radio" name="preguntaCuatro" value="P4_4"> Reza 10 avemaria diarios y estarás mas cerca del cielo. </label></p>
+	</form>
+
+	<button id="anterior3">Anterior</button>
+	
+	<button id="finalizar">Finalizar</button>
+	</div>
+	</div>
+
+	<!-- Porosidad -->
+
+	<div id="porosidad">
+	<h2>Porosidad - Registro Sónico (Wyllie et al., 1958) </h2>
+
+	<p>El cálculo de porosidad a partir del registro sónico, se puede realizar a partir de la ecuación de promedio de tiempos de Wyllie (Wyllie et al., 1958), la cual se expresa de la siguiente manera:</p>
+
+	<img src="img/porosidadsonicowyllie.gif" alt="Porosidad Sonico Wyllie"> 
+
+	<p>Donde:</p>
+	<ul>
+	    <li>ɸs= porosidad derivada del registro sónico</li>
+	    <li>Δtma= tiempo de tránsito por intervalo en la matriz</li>
+	    <li>Δtlog= tiempo de tránsito por intervalo en la formación</li>
+	    <li>Δtfl= tiempo de tránsito por intervalo en el fluido de formación (lodo de agua fresca = 189 µseg/pie; lodo de agua salada = 185 µseg/pie)</li>
+	</ul>
+
+	<p>La calidad de la porosidad de una roca es determinada según el tipo de litología. Para areniscas y carbonatos los rangos de porosidades se definen de la siguiente manera:</p>
+
+	<table>
+		<tr><th colspan="3">Porosidad</th></tr>
+		<tr><th>Calidad</th><th>Areniscas</th><th>Carbonatos</th></tr>
+		<tr><td>Baja</td><td> < 20 %</td> <td> < 4 % </td></tr>
+		<tr><td>Buena</td><td> 20 - 30 %</td> <td> 4 - 8 % </td></tr>
+		<tr><td>Alta</td><td> > 30 %</td> <td> > 8 % </td></tr>
+
+	</table>
+
+	<h3>Calcular porosidad</h3>
+
+	<form id="formularioPorosidad">
+		<label for="arenisca">Arenisca<input id="arenisca" type="radio" name="roca"></label>
+
+		<label for="caliza">Caliza<input id="caliza" type="radio" name="roca"></label>
+
+		<p><label for="Δtlog"><strong>Δtlog</strong>: <input type="number" id="Δtlog" autocomplete="off"> µseg/pie </label></p>
+
+		<p><label for="Δtma"><strong>Δtma</strong>: <input type="number" id="Δtma" autocomplete="off"> µseg/pie </label></p>
+
+		<p><label for="Δtfl"><strong>Δtfl</strong>: <input type="number" id="Δtfl" autocomplete="off"> µseg/pie </label></p>
+
+		<p id="resultado">Resultado</p>
+
+		<p><label><strong>ɸs</strong>: <input type="number" id="ɸs" autocomplete="off" disabled /> Decimal </label></p>
+
+		<p><label><strong>ɸs</strong>: <input type="number" id="ɸsporc" autocomplete="off" disabled /> % </label></p>
+
+		<p id="baja">Baja Porosidad</p>
+		<p id="buena">Buena Porosidad</p>
+		<p id="alta">Alta Porosidad</p>
+	</form>
+	</div>
+	</div>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<script src="js/codigo.js"></script>
+	<script src="js/conversionesScript.js"></script>
+	<script src="js/cuestionarioScript.js"></script>
+	<script src="js/porosidadScript.js"></script>
+</body>
+</html>

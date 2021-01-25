@@ -1,0 +1,228 @@
+table, tr, td, th, #distancia, #area, #volumen, #presion {
+			border: 1px solid black;
+			border-collapse: collapse;
+			text-align: center;
+		}
+
+table {
+	margin: 0 auto;
+}
+
+th {
+	background-color: darkblue;
+	color: white;
+	border: 1px solid white
+}
+
+form{
+	display: block;
+	margin: 0 auto;
+	background-color: darkblue;
+	color: white;
+	text-align: center;
+	width: 40%;
+	padding: 5px 5px 5px 5px;
+	margin-top: 10px;
+	border: 1px solid block;
+	border-radius: 5px
+}
+
+input[type='text'], input[type='number'] {
+	width: 100px;
+	border: 1px solid white;
+	border-radius: 5px;
+	text-align: center;
+}
+
+input[type='email'] {
+	width: 200px;
+	border: 1px solid white;
+	border-radius: 5px;
+	text-align: center;
+}
+
+input[type='number']:disabled {
+	background-color: white;
+	color: black
+}
+
+.tituloTabla{
+	background-color: white;
+	color: slategrey
+}
+
+.tituloTabla:hover {
+	cursor: pointer;
+}
+
+#distanciaContainer, #areaContainer, #volumenContainer, #presionesContainer {
+	display: none;	
+}
+
+.spanOculto {
+	display: none;
+}
+
+#distanciaP:hover .spanOculto, #areaP:hover .spanOculto, #volumenP:hover .spanOculto, #presionesP:hover .spanOculto {
+	display: inline;	
+}
+
+.contenedor {
+	margin: 5px;
+}
+
+.cuestionario {
+	text-align: center;
+}
+
+.contenedor button, #jugar {
+	display: block;
+	margin: 0 auto;
+	background: green;
+	color: white
+	border: 1px solid black;
+	border-radius: 5px;
+	color: white
+}
+
+.contenedor button:hover {
+	background-color: blue;
+	cursor: pointer;
+}
+
+progress[value] {
+	background-color: #eee;
+	width: 250px;
+	height: 20px;
+}
+
+progress {
+	display: block;
+	margin: 0 auto
+}
+
+#textoResultado {
+	text-align: center;
+	font-weight: bold;
+}
+
+#formularioPorosidad{
+	background-color: darkblue; text-align: center; border-color: black; border-style: solid; border-width: 1px; width: 400px; margin-left: auto;margin-right: auto; border-radius: 5px; padding-top: 5px; color: white}
+
+h1 {font-size: 16px; text-align: center;}
+
+ul {
+	list-style-type: none; 
+}
+
+h3 {
+	text-align: center;
+}
+
+img {
+	display: block;
+	margin: 0 auto
+}
+
+#baja, #buena, #alta {
+	display: none;
+	text-align: center;
+}
+
+#resultado{
+	text-align: center;
+}
+
+header {
+	padding: 5px 0 5px 10px;
+	border: 1px solid transparent;
+	border-radius: 5px;
+}
+
+header, header h1, header h3{
+	background-color: darkblue;
+	color: white;
+	text-align: left;
+}
+
+header h1, .cuestionario h1{
+	font-size: 24px;
+}
+
+header h2 {
+	font-size: 20px;
+}
+
+header h3 {
+	font-size: 16px;
+}
+
+#conversiones {
+	width: 400px;
+	padding: 5px 0 5px 0;
+}
+
+nav button, nav a {
+	margin: 5px;
+	background-color: black;
+	color: white;
+	border: 1px solid transparent;
+	border-radius: 5px
+}
+
+nav button:hover, nav a:hover {
+	background-color: blue;
+	color: white;
+	cursor: pointer;
+}
+
+nav {
+	background-color: lightblue;
+}
+
+#encabezado {
+	font-size: 24px;
+}
+
+#porosidad, #cuestionario, #descripcion, #conversionesTabla,  {
+	width: 100%;
+}
+
+#paginaPrincipal {
+	width: 80%;
+	margin: 0 auto
+}
+
+#distanciaP, #areaP, #volumenP, #presionesP {
+	border-left: 1px solid darkblue;
+	border-right: 1px solid darkblue
+}
+
+a {
+	display: inline-block;
+	text-decoration: none;
+	padding: 0 3px 0 3px;
+}
+
+#cancelar {
+	display: inline-block;
+	background-color: red;
+	color: white;
+	border: 1px solid white;
+	border-radius: 5px
+}
+
+input[type='submit'] {
+	background-color: blue;
+	color: white;
+	border: 1px solid white;
+	border-radius: 5px
+}
+
+input[type='submit']:hover {
+	cursor: pointer;
+}
+
+#reguntaUno, #preguntaDos, #preguntaTres, #preguntaCuatro {
+	width: 600px;
+} 
